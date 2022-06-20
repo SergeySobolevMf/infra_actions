@@ -62,7 +62,7 @@ jobs:
         uses: docker/build-push-action@v2 
         with:
           push: true
-          tags: sergeymf2022/infra_actions:latest 
+          tags: sergeymf2022/infra_actions
   deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
